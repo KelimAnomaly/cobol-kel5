@@ -1,0 +1,27 @@
+identification division
+progam-id. level number,
+environment division.
+data division.
+working storage section.
+01 data.
+    02 nilai pic 9(2) value 5.
+    02 nilai1 pic 9(2) value 8.
+    02 i pic 9.
+    02 j pic 9.
+screen section.
+01 hapus-layar.
+   49 blank screen.
+procedure division.
+mulai.
+    perform cetak
+varying i from 1 by 1 until 1 > nilai1
+after J from 1 by 1 until J > 1.
+stop 'selesai'.
+selesai.
+    stop run.
+cetak.
+    display (,) 1.
+ip i - j display space.
+substract 1 from nilai1.
+
+
